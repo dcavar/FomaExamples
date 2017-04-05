@@ -1,0 +1,33 @@
+! jap.lexc !
+! (C) 2017 by Damir Cavar <damir@linguistlist.org>
+! Author(s): Damir Cavar, 
+! Date: Mon Jan 23 11:40:44 EST 2017
+!
+! Purpose:
+! Lexc data for Foma for Japanese
+!
+! Licensed under the Apache License, Version 2.0 (the "License")
+! you may not use this file except in compliance with the License.
+! You may obtain a copy of the License at
+!
+! http://www.apache.org/licenses/LICENSE-2.0
+!
+! Unless required by applicable law or agreed to in writing, software
+! distributed under the License is distributed on an "AS IS" BASIS,
+! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+! See the License for the specific language governing permissions and
+! limitations under the License.
+
+
+Multichar_Symbols +N +V +P +Aux +Art +Pron +Dem +Def +Refl +Indef +Pres +PastPart +Past +PresPart +PretPres +1P +2P +3P +Sg +Pl +Q +Neg +Intens +Emph +Countable +Uncountable +Mass +Comparative +Superlative +NELanguage +NECountry +Arch +Poet +Formal +Dialect +Abbrev +Masc +Fem +Neut +Acc +Nom +Dat +Time +Place +Law +Species
+
+
+LEXICON Root
+Pronouns ;
+
+
+LEXICON Pronouns
+あなた+Pro+Sg+2P:あなた # ;
+あなた+Pro+Pl+2P:あなたがた # ;
+
+
