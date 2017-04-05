@@ -1,0 +1,104 @@
+# foma.scr
+#
+# (C) 2015 by Damir Cavar <damir@linguistlist.org>
+# Author(s): Damir Cavar, 
+# Date: Mon Jan 23 11:40:44 EST 2017
+#
+# Purpose:
+# Foma script for English
+#
+# Licensed under the Apache License, Version 2.0 (the "License")
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+# erase everything in memory
+clear
+
+# Vowels
+define V [a|e|i|o|u];
+define C [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z];
+define S C* V C*;
+# geminating consonants
+define GC [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v];
+
+# read in the grammar
+read lexc < eng.lexc
+
+union net
+minimize net
+define Lexicon;
+
+# delete e before -ing or -ed
+define EDeletion e -> 0 ||  _ "^" [ i n g | e d ] .#. ;
+
+# insert e after sibilants before suffix s
+define EInsertion [..] -> e || [ s | z | x | c h | s h ] "^" _ s .#. ;
+
+# replace y with ie before -s and with i before -ed suffixes.
+define YReplacement y -> i e || _ "^" s .#.   ,
+                    y -> i   || _ "^" e d .#. ;
+
+# insert k if verb ends in c preceded by a vowel
+define KInsertion [..] -> k || V c _ "^" [ e d | i n g ] .#. ;
+
+# doubled g before suffixes -ing or -ed
+# define ConsonantDoublingG g -> g g || _ "^" [ i n g | e d ];
+# gemination for monosyllabic words or words with a stressed final syllable (marked with preceding ^)
+# only for C*VC syllables:
+# define Gemination b -> b b, c -> c c, d -> d d, f -> f f, g -> g g, h -> h h, j -> j j, k -> k k, l -> l l, m -> m m, n -> n n, p -> p p, q -> q q, r -> r r, s -> s s, t -> t t, v -> v v, z -> z z || [ .#. | "^" ] C* V C* _ "^" [ i n g | e d ] .#. ;
+# define GeminationB b -> b b || [ .#. | "^" ] C* V _ "^" [ i n g | e d ] .#. ;
+# define Gemination b -> b b, c -> c c, d -> d d, f -> f f, g -> g g, h -> h h, j -> j j, k -> k k, l -> l l, m -> m m, n -> n n, p -> p p, q -> q q, r -> r r, s -> s s, t -> t t, v -> v v, z -> z z || C V _ "^" V ;
+# define GeminationB b -> b b || [ .#. | "^" ] C* V _ "^" V ;
+# monosyllabic words that undergo doubling
+define GeminationSSB b -> b b || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSD d -> d d || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSF f -> f f || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSG g -> g g || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSK k -> k k || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSL l -> l l || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSM m -> m m || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSN n -> n n || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSP p -> p p || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSQ q -> q q || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSR r -> r r || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSS s -> s s || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSST t -> t t || .#. C* V _ "^" [ e d | i n g ] .#. ;
+define GeminationSSV v -> v v || .#. C* V _ "^" [ e d | i n g ] .#. ;
+
+define Cleanup "^" -> 0;
+
+
+define Grammar Lexicon       .o.
+               EInsertion    .o.
+               YReplacement  .o.
+               GeminationSSB .o.
+               GeminationSSD .o.
+               GeminationSSF .o.
+               GeminationSSG .o.
+               GeminationSSK .o.
+               GeminationSSL .o.
+               GeminationSSM .o.
+               GeminationSSN .o.
+               GeminationSSP .o.
+               GeminationSSQ .o.
+               GeminationSSR .o.
+               GeminationSSS .o.
+               GeminationSST .o.
+               GeminationSSV .o.
+               KInsertion    .o.
+               EDeletion     .o.
+               Cleanup;
+
+regex Grammar;
+save stack eng.fst
+print dot > eng.dot
+
