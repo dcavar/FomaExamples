@@ -1,0 +1,48 @@
+digraph A {
+rankdir = LR;
+node [shape=circle,style=filled] 0
+node [shape=circle,style=filled] 1
+node [shape=circle,style=filled] 2
+node [shape=circle,style=filled] 3
+node [shape=circle,style=filled] 4
+node [shape=circle,style=filled] 5
+node [shape=circle,style=filled] 6
+node [shape=circle,style=filled] 7
+node [shape=circle,style=filled] 8
+node [shape=circle,style=filled] 9
+node [shape=circle,style=filled] 10
+node [shape=circle,style=filled] 11
+node [shape=circle,style=filled] 12
+node [shape=circle,style=filled] 13
+node [shape=circle,style=filled] 14
+node [shape=circle,style=filled] 15
+node [shape=circle,style=filled] 16
+node [shape=circle,style=filled] 17
+node [shape=circle,style=filled] 18
+node [shape=circle,style=filled] 19
+node [shape=doublecircle,style=filled] 20
+0 -> 11 [label="g "];
+0 -> 7 [label="d "];
+0 -> 1 [label="c "];
+1 -> 6 [label="a "];
+1 -> 2 [label="o "];
+2 -> 3 [label="y "];
+3 -> 4 [label="o "];
+4 -> 5 [label="t "];
+5 -> 9 [label="e "];
+6 -> 9 [label="t "];
+7 -> 8 [label="o "];
+8 -> 9 [label="g "];
+9 -> 10 [label="<+N:0> "];
+10 -> 20 [label="<+Sg:0> <+Pl:s>\n"];
+11 -> 12 [label="r "];
+12 -> 13 [label="a "];
+13 -> 14 [label="s "];
+14 -> 15 [label="s "];
+15 -> 18 [label="<+N:0> "];
+15 -> 16 [label="<+N:e> "];
+16 -> 17 [label="<+Pl:s> "];
+17 -> 20 [label="<+Species:0> "];
+18 -> 19 [label="<+Sg:0> "];
+19 -> 20 [label="<+Species:0> <+Mass:0>\n"];
+}

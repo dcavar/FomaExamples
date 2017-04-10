@@ -40,7 +40,7 @@ grass+N+Sg+Species:grass # ;
 
 
 LEXICON NominalInflection
-+N+Pl:s # ;
++N+Pl:^s # ;
 +N+Sg:0 # ;
 
 
