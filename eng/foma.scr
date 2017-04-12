@@ -32,6 +32,9 @@ define GC [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v];
 
 # read in the grammar
 read lexc < eng.lexc
+read lexc < eng_verbs.lexc
+read lexc < eng_verbs_regular.lexc
+
 
 union net
 minimize net

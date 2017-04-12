@@ -1,5 +1,5 @@
 ! eng.lexc !
-! (C) 2015 by Damir Cavar <damir@linguistlist.org>
+! (C) 2017 by Damir Cavar <damir@linguistlist.org>
 ! Author(s): Damir Cavar, 
 ! Date: Mon Jan 23 11:40:44 EST 2017
 !
@@ -19,12 +19,17 @@
 ! limitations under the License.
 
 
-Multichar_Symbols +N +V +P +Aux +Art +Pron +Dem +Def +Refl +Indef +Pres +PastPart +Past +PresPart +PretPres +1P +2P +3P +Sg +Pl +Q +Neg +Intens +Emph +Countable +Uncountable +Mass +Comparative +Superlative +NELanguage +NECountry +Arch +Poet +Formal +Dialect +Abbrev +Masc +Fem +Neut +Acc +Nom +Dat +Time +Place +Law +Species
+Multichar_Symbols +N +V +P +Aux +Art +Pron +Dem +Def +Refl +Indef +Pres +PastPart +Past +PresPart +PretPres +1P +2P +3P +Sg +Pl +Q +Neg +Intens +Emph +Countable +Uncountable +Mass +Comparative +Superlative +NEPerson +NELanguage +NECountry +Arch +Poet +Formal +Dialect +Abbrev +Masc +Fem +Neut +Acc +Nom +Dat +Time +Place +Law +Species
 
 
 LEXICON Root
 RegularNouns ;
 ExceptionalNouns ;
+PersonNamesMasc ;
+PersonNamesFem ;
+Pronouns ;
+Article ;
+
 
 
 LEXICON RegularNouns
@@ -33,11 +38,61 @@ coyote NominalInflection ;
 dog    NominalInflection ;
 
 
+LEXICON PersonNamesMasc
+John  PNMInflection ;
+Peter PNMInflection ;
+
+
+LEXICON PersonNamesFem
+Mary PNFInflection ;
+Sue  PNFInflection ;
+
+
+LEXICON Article
+a+D+Art+Indef:a     #;
+a+D+Art+Indef:an    #;
+the+D+Art+Def:the   #;
+
+
+LEXICON Pronouns
+I+Pron+1P+Sg+Nom:I #;
+you+Pron+2P+Sg+Nom:you #;
+he+Pron+3P+Sg+Masc+Nom:he #;
+she+Pron+3P+Sg+Fem+Nom:she #;
+it+Pron+3P+Sg+Neut+Nom:it #;
+we+Pron+1P+Pl+Nom:we #;
+you+Pron+2P+Pl+Nom:you #;
+they+Pron+3P+Pl+Nom:they #;
+I+Pron+1P+Sg+Acc:me #;
+you+Pron+2P+Sg+Acc:you #;
+he+Pron+3P+Sg+Masc+Acc:him #;
+she+Pron+3P+Sg+Fem+Acc:her #;
+it+Pron+3P+Sg+Neut+Acc:it #;
+we+Pron+1P+Pl+Acc:us #;
+you+Pron+2P+Pl+Acc:you #;
+they+Pron+3P+Pl+Acc:them #;
+I+Pron+1P+Sg+Dat:me #;
+you+Pron+2P+Sg+Dat:you #;
+he+Pron+3P+Sg+Masc+Dat:him #;
+she+Pron+3P+Sg+Fem+Dat:her #;
+it+Pron+3P+Sg+Neut+Dat:it #;
+we+Pron+1P+Pl+Dat:us #;
+you+Pron+2P+Pl+Dat:you #;
+they+Pron+3P+Pl+Dat:them #;
+
+
+LEXICON PNMInflection 
++N+Pl+Masc+NEPerson:^s # ;
++N+Sg+Masc+NEPerson:0 # ;
+
+LEXICON PNFInflection 
++N+Pl+Fem+NEPerson:^s # ;
++N+Sg+Fem+NEPerson:0 # ;
+
 LEXICON ExceptionalNouns
 grass+N+Sg+Mass:grass # ;
 grass+N+Pl+Species:grasses # ;
 grass+N+Sg+Species:grass # ;
-
 
 LEXICON NominalInflection
 +N+Pl:^s # ;

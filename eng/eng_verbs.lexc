@@ -1,0 +1,1151 @@
+! eng_verbs.lexc !
+!
+! Author(s): Damir Cavar, 
+! Date: 10/27/2015
+!
+! Purpose: English verbs
+!
+! Copyright 2015 by Damir Cavar, 
+!
+! Licensed under the Apache License, Version 2.0 (the "License");
+! you may not use this file except in compliance with the License.
+! You may obtain a copy of the License at
+!
+!   http://www.apache.org/licenses/LICENSE-2.0
+!
+! Unless required by applicable law or agreed to in writing, software
+! distributed under the License is distributed on an "AS IS" BASIS,
+! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+! See the License for the specific language governing permissions and
+! limitations under the License.
+
+
+
+Multichar_Symbols +N +V +Aux +Art +Def +Indef +Pres +PastPart +Past +PresPart +1P +2P +3P +Sg +Pl +Countable +Uncountable +Mass +NELanguage +NECountry +Arch
+
+
+
+LEXICON Root
+! irregular forms
+abide Vinf; !
+abide+V+Past:abode #;
+alight Vinf; !
+alight+V+Past:alit #;
+alight+V+PastPart:alit #;
+arise Vinf2;
+arise+V+Past:arose #;
+arise+V+PastPart:arisen #;
+awake Vinf2;
+awake+V+Past:awakened #;
+awake+V+PastPart:awakened #;
+awake+V+Past:awoke #;
+awake+V+PastPart:awoken #;
+backslide Vinf2;
+backslide+V+Past:backslid #;
+backslide+V+PastPart:backslidden #;
+backslide+V+PastPart:backslid #;
+bear Vinf2;
+bear+V+Past:bore  #;
+bear+V+PastPart:born  #;
+bear+V+PastPart:borne  #;
+beat Vinf2;
+beat+V+Past:beat #;
+beat+V+PastPart:beaten #;
+beat+V+PastPart:beat #;
+become Vinf2;
+become+V+Past:became #;
+become+V+PastPart:become #;
+begin Vinf2;
+begin+V+Past:began #;
+begin+V+PastPart:begun #;
+bend Vinf2;
+bend+V+Past:bent #;
+bend+V+PastPart:bent #;
+bet Vinf2;
+bet+V+Past:bet #;
+bet+V+Past:betted #;     ! [?]
+bet+V+PastPart:bet #;
+bet+V+PastPart:betted #; ! [?]
+bid Vinf2; #;            ! (farewell)
+bid+V+Past:bid  #;       ! (farewell)
+bid+V+Past:bade #;       ! (farewell)
+bid+V+PastPart:bidden #; ! (farewell)
+bid Vinf2;            ! (offer amount)
+bid+V+Past:bid #;     ! (offer amount)
+bid+V+PastPart:bid #; ! (offer amount)
+bind Vinf2;
+bind+V+Past:bound  #;
+bind+V+PastPart:bound  #;
+bite Vinf2;
+bite+V+Past:bit  #;
+bite+V+PastPart:bitten  #;
+bleed Vinf2;
+bleed+V+Past:bled  #;
+bleed+V+PastPart:bled  #;
+blow Vinf2;
+blow+V+Past:blew  #;
+blow+V+PastPart:blown  #;
+break Vinf2;
+break+V+Past:broke  #;
+break+V+PastPart:broken  #;
+breed Vinf2;
+breed+V+Past:bred  #;
+breed+V+PastPart:bred  #;
+bring Vinf2;
+bring+V+Past:brought  #;
+bring+V+PastPart:brought  #;
+broadcast Vinf; !
+broadcast+V+Past:broadcast  #;
+broadcast+V+PastPart:broadcast  #;
+browbeat Vinf2;
+browbeat+V+Past:browbeat  #;
+browbeat+V+PastPart:browbeaten  #;
+browbeat+V+PastPart:browbeat  #;
+build Vinf2;
+build+V+Past:built  #;
+build+V+PastPart:built  #;
+burn Vinf; ! 
+burn+V+Past:burnt #; ! [?]
+burn+V+PastPart:burnt #; ! [?]
+burst Vinf2;
+burst+V+Past:burst  #;
+burst+V+PastPart:burst  #;
+bust Vinf; !
+bust+V+Past:bust  #;
+bust+V+PastPart:bust  #;
+buy Vinf2;
+buy+V+Past:bought  #;
+buy+V+PastPart:bought  #;
+cast Vinf2;
+cast+V+Past:cast #;
+cast+V+PastPart:cast #;
+catch Vinf2;
+catch+V+Past:caught #;
+catch+V+PastPart:caught #;
+choose Vinf2;
+choose+V+Past:chose #;
+choose+V+PastPart:chosen #;
+cling Vinf2;
+cling+V+Past:clung #;
+cling+V+PastPart:clung #;
+clothe Vinf; !
+clothe+V+Past:clad #; ! [?]
+clothe+V+PastPart:clad #; ! [?]
+come Vinf2;
+come+V+Past:came #;
+come+V+PastPart:come #;
+cost Vinf2;
+cost+V+Past:cost #;
+cost+V+PastPart:cost #;
+creep Vinf2;
+creep+V+Past:crept #;
+creep+V+PastPart:crept #;
+crossbreed Vinf2;
+crossbreed+V+Past:crossbred #;
+crossbreed+V+PastPart:crossbred #;
+cut Vinf2;
+cut+V+Past:cut #;
+cut+V+PastPart:cut #;
+daydream Vinf; !
+daydream+V+Past:daydreamt #; ! [?]
+daydream+V+PastPart:daydreamt #; ! [?]
+deal Vinf2;
+deal+V+Past:dealt #;
+deal+V+PastPart:dealt #;
+dig Vinf2;
+dig+V+Past:dug #;
+dig+V+PastPart:dug #;
+disprove Vinf; !
+disprove+V+PastPart:disproven #;
+dive Vinf; ! (jump head-first, scuba diving)
+dive+V+Past:dove #;
+draw Vinf2;
+draw+V+Past:drew #;
+draw+V+PastPart:drawn #;
+dream Vinf; !
+dream+V+Past:dreamt #; ! [?]
+dream+V+PastPart:dreamt #; ! [?]
+drink Vinf2;
+drink+V+Past:drank #;
+drink+V+PastPart:drunk #;
+drive Vinf2;
+drive+V+Past:drove #;
+drive+V+PastPart:driven #;
+dwell Vinf; !
+dwell+V+Past:dwelt #; ! [?]
+dwell+V+PastPart:dwelt #; ! [?]
+eat Vinf2;
+eat+V+Past:ate #;
+eat+V+PastPart:eaten #;
+fall Vinf2;
+fall+V+Past:fell #;
+fall+V+PastPart:fallen #;
+feed Vinf2;
+feed+V+Past:fed #;
+feed+V+PastPart:fed #;
+feel Vinf2;
+feel+V+Past:felt #;
+feel+V+PastPart:felt #;
+fight Vinf2;
+fight+V+Past:fought #;
+fight+V+PastPart:fought #;
+find Vinf2;
+find+V+Past:found #;
+find+V+PastPart:found #;
+fit Vinf; !  (tailor, change size)  (be right size)
+fit+V+Past:fit #; ! [?]
+fit+V+PastPart:fit #; ! [?]
+flee Vinf2;
+flee+V+Past:fled #;
+flee+V+PastPart:fled #;
+fling Vinf2;
+fling+V+Past:flung #;
+fling+V+PastPart:flung #;
+fly Vinf2;
+fly+V+Past:flew #;
+fly+V+PastPart:flown #;
+forbid Vinf2;
+forbid+V+Past:forbade #;
+forbid+V+PastPart:forbidden #;
+forecast Vinf2;
+forecast+V+Past:forecast #;
+forecast+V+PastPart:forecast #;
+forego Vinf2; ! (also forgo)
+forego+V+Past:forewent #;
+forego+V+PastPart:foregone #;
+foresee Vinf2;
+foresee+V+Past:foresaw #;
+foresee+V+PastPart:foreseen #;
+foretell Vinf2;
+foretell+V+Past:foretold #;
+foretell+V+PastPart:foretold #;
+forget Vinf2;
+forget+V+Past:forgot #;
+forget+V+PastPart:forgotten #;
+forget+V+PastPart:forgot #; ! [?]
+forgive Vinf2;
+forgive+V+Past:forgave #;
+forgive+V+PastPart:forgiven #;
+forsake Vinf2;
+forsake+V+Past:forsook #;
+forsake+V+PastPart:forsaken #;
+freeze Vinf2;
+freeze+V+Past:froze #;
+freeze+V+PastPart:frozen #;
+frostbite Vinf2;
+frostbite+V+Past:frostbit #;
+frostbite+V+PastPart:frostbitten #;
+get Vinf2;
+get+V+Past:got #;
+get+V+PastPart:gotten #;
+get+V+PastPart:got #; ! [?]
+give Vinf2;
+give+V+Past:gave #;
+give+V+PastPart:given #;
+go Vinf3;
+go+V+Past:went #;
+go+V+PastPart:gone #;
+go+V+3P+Sg:goes #;
+grind Vinf2;
+grind+V+Past:ground #;
+grind+V+PastPart:ground #;
+grow Vinf2;
+grow+V+Past:grew #;
+grow+V+PastPart:grown #;
+hand-feed Vinf2;
+hand-feed+V+Past:hand-fed #;
+hand-feed+V+PastPart:hand-fed #;
+handwrite Vinf2;
+handwrite+V+Past:handwrote #;
+handwrite+V+PastPart:handwritten #;
+hang Vinf2;
+hang+V+Past:hung #;
+hang+V+PastPart:hung #;
+have Vinf2;
+have+V+Past:had #;
+have+V+PastPart:had #;
+hear Vinf2;
+hear+V+Past:heard #;
+hear+V+PastPart:heard #;
+hew Vinf; !
+hew+V+PastPart:hewn #;
+hide Vinf2;
+hide+V+Past:hid #;
+hide+V+PastPart:hidden #;
+hit Vinf2;
+hit+V+Past:hit #;
+hit+V+PastPart:hit #;
+hold Vinf2;
+hold+V+Past:held #;
+hold+V+PastPart:held #;
+hurt Vinf2;
+hurt+V+Past:hurt #;
+hurt+V+PastPart:hurt #;
+inbreed Vinf2;
+inbreed+V+Past:inbred #;
+inbreed+V+PastPart:inbred #;
+inlay Vinf2;
+inlay+V+Past:inlaid #;
+inlay+V+PastPart:inlaid #;
+input Vinf; !
+input+V+Past:input #;
+input+V+PastPart:input #;
+interbreed Vinf2;
+interbreed+V+Past:interbred #;
+interbreed+V+PastPart:interbred #;
+interweave Vinf; !
+interweave+V+Past:interwove #;
+interweave+V+PastPart:interwoven #;
+interwind Vinf2;
+interwind+V+Past:interwound #;
+interwind+V+PastPart:interwound #;
+jerry-build Vinf2;
+jerry-build+V+Past:jerry-built #;
+jerry-build+V+PastPart:jerry-built #;
+keep Vinf2;
+keep+V+Past:kept #;
+keep+V+PastPart:kept #;
+kneel Vinf; !
+kneel+V+Past:knelt #;
+kneel+V+PastPart:knelt #;
+knit Vinf; !
+knit+V+Past:knit #;
+knit+V+PastPart:knit #;
+know Vinf2;
+know+V+Past:knew #;
+know+V+PastPart:known #;
+lay Vinf2;
+lay+V+Past:laid #;
+lay+V+PastPart:laid #;
+lead Vinf2;
+lead+V+Past:led #;
+lead+V+PastPart:led #;
+lean Vinf; !
+lean+V+Past:leant #; ! [?]
+lean+V+PastPart:leant #; ! [?]
+leap Vinf; !
+leap+V+Past:leapt #; ! [?]
+leap+V+PastPart:leapt #; ! [?]
+learn Vinf; !
+learn+V+Past:learnt #; ! [?]
+learn+V+PastPart:learnt #; ! [?]
+leave Vinf2;
+leave+V+Past:left #;
+leave+V+PastPart:left #;
+lend Vinf2;
+lend+V+Past:lent #;
+lend+V+PastPart:lent #;
+let Vinf2;
+let+V+Past:let #;
+let+V+PastPart:let #;
+lie Vinf2;
+lie+V+Past:lay #;
+lie+V+PastPart:lain #;
+lie Vinf; ! (not tell truth)
+light Vinf; !
+light+V+Past:lit #;
+light+V+PastPart:lit #;
+lip-read Vinf2;
+lip-read+V+Past:lip-read #;
+lip-read+V+PastPart:lip-read #;
+lose Vinf2;
+lose+V+Past:lost #;
+lose+V+PastPart:lost #;
+make  Vinf2;
+make+V+Past:made #;
+make+V+PastPart:made #;
+mean Vinf2;
+mean+V+Past:meant #;
+mean+V+PastPart:meant #;
+meet Vinf2;
+meet+V+Past:met #;
+meet+V+PastPart:met #;
+miscast Vinf2;
+miscast+V+Past:miscast #;
+miscast+V+PastPart:miscast #;
+misdeal Vinf2;
+misdeal+V+Past:misdealt #;
+misdeal+V+PastPart:misdealt #;
+misdo Vinf2;
+misdo+V+Past:misdid #;
+misdo+V+PastPart:misdone #;
+mishear Vinf2;
+mishear+V+Past:misheard #;
+mishear+V+PastPart:misheard #;
+mislay Vinf2;
+mislay+V+Past:mislaid #;
+mislay+V+PastPart:mislaid #;
+mislead Vinf2;
+mislead+V+Past:misled #;
+mislead+V+PastPart:misled #;
+mislearn Vinf; !
+mislearn+V+Past:mislearnt #; ! [?]
+mislearn+V+PastPart:mislearnt #; ! [?]
+misread Vinf2;
+misread+V+Past:misread #;
+misread+V+PastPart:misread #;
+misset Vinf2;
+misset+V+Past:misset #;
+misset+V+PastPart:misset #;
+misspeak Vinf2;
+misspeak+V+Past:misspoke #;
+misspeak+V+PastPart:misspoken #;
+misspell Vinf; !
+misspell+V+Past:misspelt #; ! [?]
+misspell+V+PastPart:misspelt #; ! [?]
+misspend Vinf2;
+misspend+V+Past:misspent #;
+misspend+V+PastPart:misspent #;
+mistake Vinf2;
+mistake+V+Past:mistook #;
+mistake+V+PastPart:mistaken #;
+misteach Vinf2;
+misteach+V+Past:mistaught #;
+misteach+V+PastPart:mistaught #;
+misunderstand Vinf2;
+misunderstand+V+Past:misunderstood #;
+misunderstand+V+PastPart:misunderstood #;
+miswrite Vinf2;
+miswrite+V+Past:miswrote #;
+miswrite+V+PastPart:miswritten #;
+mow Vinf; !
+mow+V+PastPart:mown #;
+offset Vinf2;
+offset+V+Past:offset #;
+offset+V+PastPart:offset #;
+outbid Vinf2;
+outbid+V+Past:outbid #;
+outbid+V+PastPart:outbid #;
+outbreed Vinf2;
+outbreed+V+Past:outbred #;
+outbreed+V+PastPart:outbred #;
+outdo Vinf2;
+outdo+V+Past:outdid #;
+outdo+V+PastPart:outdone #;
+outdraw Vinf2;
+outdraw+V+Past:outdrew #;
+outdraw+V+PastPart:outdrawn #;
+outdrink Vinf2;
+outdrink+V+Past:outdrank #;
+outdrink+V+PastPart:outdrunk #;
+outdrive Vinf2;
+outdrive+V+Past:outdrove #;
+outdrive+V+PastPart:outdriven #;
+outfight Vinf2;
+outfight+V+Past:outfought #;
+outfight+V+PastPart:outfought #;
+outfly Vinf2;
+outfly+V+Past:outflew #;
+outfly+V+PastPart:outflown #;
+outgrow Vinf2;
+outgrow+V+Past:outgrew #;
+outgrow+V+PastPart:outgrown #;
+outleap Vinf; !
+outleap+V+Past:outleapt #; ! [?]
+outleap+V+PastPart:outleapt #; ! [?]
+outlie Vinf; ! (not tell truth)
+outride Vinf2;
+outride+V+Past:outrode #;
+outride+V+PastPart:outridden #;
+outrun Vinf2;
+outrun+V+Past:outran #;
+outrun+V+PastPart:outrun #;
+outsell Vinf2;
+outsell+V+Past:outsold #;
+outsell+V+PastPart:outsold #;
+outshine Vinf; !
+outshine+V+Past:outshone #; ! [?]
+outshine+V+PastPart:outshone #; ! [?]
+outshoot Vinf2;
+outshoot+V+Past:outshot #;
+outshoot+V+PastPart:outshot #;
+outsing Vinf2;
+outsing+V+Past:outsang #;
+outsing+V+PastPart:outsung #;
+outsit Vinf2;
+outsit+V+Past:outsat #;
+outsit+V+PastPart:outsat #;
+outsleep Vinf2;
+outsleep+V+Past:outslept #;
+outsleep+V+PastPart:outslept #;
+outsmell Vinf; !
+outsmell+V+Past:outsmelt #; ! [?]
+outsmell+V+PastPart:outsmelt #; ! [?]
+outspeak Vinf2;
+outspeak+V+Past:outspoke #;
+outspeak+V+PastPart:outspoken #;
+outspeed Vinf2;
+outspeed+V+Past:outsped #;
+outspeed+V+PastPart:outsped #;
+outspend Vinf2;
+outspend+V+Past:outspent #;
+outspend+V+PastPart:outspent #;
+outswear Vinf2;
+outswear+V+Past:outswore #;
+outswear+V+PastPart:outsworn #;
+outswim Vinf2;
+outswim+V+Past:outswam #;
+outswim+V+PastPart:outswum #;
+outthink Vinf2;
+outthink+V+Past:outthought #;
+outthink+V+PastPart:outthought #;
+outthrow Vinf2;
+outthrow+V+Past:outthrew #;
+outthrow+V+PastPart:outthrown #;
+outwrite Vinf2;
+outwrite+V+Past:outwrote #;
+outwrite+V+PastPart:outwritten #;
+overbid Vinf2;
+overbid+V+Past:overbid #;
+overbid+V+PastPart:overbid #;
+overbreed Vinf2;
+overbreed+V+Past:overbred #;
+overbreed+V+PastPart:overbred #;
+overbuild Vinf2;
+overbuild+V+Past:overbuilt #;
+overbuild+V+PastPart:overbuilt #;
+overbuy Vinf2;
+overbuy+V+Past:overbought #;
+overbuy+V+PastPart:overbought #;
+overcome Vinf2;
+overcome+V+Past:overcame #;
+overcome+V+PastPart:overcome #;
+overdo Vinf2;
+overdo+V+Past:overdid #;
+overdo+V+PastPart:overdone #;
+overdraw Vinf2;
+overdraw+V+Past:overdrew #;
+overdraw+V+PastPart:overdrawn #;
+overdrink Vinf2;
+overdrink+V+Past:overdrank #;
+overdrink+V+PastPart:overdrunk #;
+overeat Vinf2;
+overeat+V+Past:overate #;
+overeat+V+PastPart:overeaten #;
+overfeed Vinf2;
+overfeed+V+Past:overfed #;
+overfeed+V+PastPart:overfed #;
+overhang Vinf2;
+overhang+V+Past:overhung #;
+overhang+V+PastPart:overhung #;
+overhear Vinf2;
+overhear+V+Past:overheard #;
+overhear+V+PastPart:overheard #;
+overlay Vinf2;
+overlay+V+Past:overlaid #;
+overlay+V+PastPart:overlaid #;
+overpay Vinf2;
+overpay+V+Past:overpaid #;
+overpay+V+PastPart:overpaid #;
+override Vinf2;
+override+V+Past:overrode #;
+override+V+PastPart:overridden #;
+overrun Vinf2;
+overrun+V+Past:overran #;
+overrun+V+PastPart:overrun #;
+oversee Vinf2;
+oversee+V+Past:oversaw #;
+oversee+V+PastPart:overseen #;
+oversell Vinf2;
+oversell+V+Past:oversold #;
+oversell+V+PastPart:oversold #;
+oversew Vinf; !
+oversew+V+PastPart:oversewn #;
+overshoot Vinf2;
+overshoot+V+Past:overshot #;
+overshoot+V+PastPart:overshot #;
+oversleep Vinf2;
+oversleep+V+Past:overslept #;
+oversleep+V+PastPart:overslept #;
+overspeak Vinf2;
+overspeak+V+Past:overspoke #;
+overspeak+V+PastPart:overspoken #;
+overspend Vinf2;
+overspend+V+Past:overspent #;
+overspend+V+PastPart:overspent #;
+overspill Vinf2;
+overspill+V+Past:overspilt #; ! [?]
+overspill+V+PastPart:overspilt #; ! [?]
+overtake Vinf2;
+overtake+V+Past:overtook #;
+overtake+V+PastPart:overtaken #;
+overthink Vinf2;
+overthink+V+Past:overthought #;
+overthink+V+PastPart:overthought #;
+overthrow Vinf2;
+overthrow+V+Past:overthrew #;
+overthrow+V+PastPart:overthrown #;
+overwind Vinf2;
+overwind+V+Past:overwound #;
+overwind+V+PastPart:overwound #;
+overwrite Vinf2;
+overwrite+V+Past:overwrote #;
+overwrite+V+PastPart:overwritten #;
+partake Vinf2;
+partake+V+Past:partook #;
+partake+V+PastPart:partaken #;
+pay Vinf2;
+pay+V+Past:paid #;
+pay+V+PastPart:paid #;
+plead Vinf; !
+plead+V+Past:pled #;
+plead+V+PastPart:pled #;
+prebuild Vinf2;
+prebuild+V+Past:prebuilt #;
+prebuild+V+PastPart:prebuilt #;
+predo Vinf2;
+predo+V+Past:predid #;
+predo+V+PastPart:predone #;
+premake Vinf2;
+premake+V+Past:premade #;
+premake+V+PastPart:premade #;
+prepay Vinf2;
+prepay+V+Past:prepaid #;
+prepay+V+PastPart:prepaid #;
+presell Vinf2;
+presell+V+Past:presold #;
+presell+V+PastPart:presold #;
+preset Vinf2;
+preset+V+Past:preset #;
+preset+V+PastPart:preset #;
+preshrink Vinf2;
+preshrink+V+Past:preshrank #;
+preshrink+V+PastPart:preshrunk #;
+proofread Vinf2;
+proofread+V+Past:proofread #;
+proofread+V+PastPart:proofread #;
+prove Vinf; !
+prove+V+PastPart:proven #;
+put Vinf2;
+put+V+Past:put #;
+put+V+PastPart:put #;
+quick-freeze Vinf2;
+quick-freeze+V+Past:quick-froze #;
+quick-freeze+V+PastPart:quick-frozen #;
+quit Vinf; ! [?]
+quit+V+Past:quit #;
+quit+V+PastPart:quit #;
+read Vinf2;
+read+V+Past:read #;
+read+V+PastPart:read #;
+reawake Vinf2;
+reawake+V+Past:reawoke #;
+reawake+V+PastPart:reawaken #;
+rebid Vinf2;
+rebid+V+Past:rebid #;
+rebid+V+PastPart:rebid #;
+rebind Vinf2;
+rebind+V+Past:rebound #;
+rebind+V+PastPart:rebound #;
+rebroadcast Vinf; !
+rebroadcast+V+Past:rebroadcast #;
+rebroadcast+V+PastPart:rebroadcast #;
+rebuild Vinf2;
+rebuild+V+Past:rebuilt #;
+rebuild+V+PastPart:rebuilt #;
+recast Vinf2;
+recast+V+Past:recast #;
+recast+V+PastPart:recast #;
+recut Vinf2;
+recut+V+Past:recut #;
+recut+V+PastPart:recut #;
+redeal Vinf2;
+redeal+V+Past:redealt #;
+redeal+V+PastPart:redealt #;
+redo Vinf2;
+redo+V+Past:redid #;
+redo+V+PastPart:redone #;
+redraw Vinf2;
+redraw+V+Past:redrew #;
+redraw+V+PastPart:redrawn #;
+refit Vinf; ! [?] (replace parts)  (retailor)
+refit+V+Past:refit #;
+refit+V+PastPart:refit #;
+regrind Vinf2;
+regrind+V+Past:reground #;
+regrind+V+PastPart:reground #;
+regrow Vinf2;
+regrow+V+Past:regrew #;
+regrow+V+PastPart:regrown #;
+rehang Vinf2;
+rehang+V+Past:rehung #;
+rehang+V+PastPart:rehung #;
+rehear Vinf2;
+rehear+V+Past:reheard #;
+rehear+V+PastPart:reheard #;
+reknit Vinf; !
+reknit+V+Past:reknit #;
+reknit+V+PastPart:reknit #;
+relay Vinf; ! (for example tiles) (pass along)
+relay+V+Past:relaid #;
+relay+V+PastPart:relaid #;
+! make sure this is in the rules! TODO  REGULAR	relayed	relayed
+relearn Vinf; !
+relearn+V+Past:relearnt #; ! [?]
+relearn+V+PastPart:relearnt #; ! [?]
+relight Vinf; !
+relight+V+Past:relit #;
+relight+V+PastPart:relit #;
+remake Vinf2;
+remake+V+Past:remade #;
+remake+V+PastPart:remade #;
+repay Vinf2;
+repay+V+Past:repaid #;
+repay+V+PastPart:repaid #;
+reread Vinf2;
+reread+V+Past:reread #;
+reread+V+PastPart:reread #;
+rerun Vinf2;
+rerun+V+Past:reran #;
+rerun+V+PastPart:rerun #;
+resell Vinf2;
+resell+V+Past:resold #;
+resell+V+PastPart:resold #;
+resend Vinf2;
+resend+V+Past:resent #;
+resend+V+PastPart:resent #;
+reset Vinf2;
+reset+V+Past:reset #;
+reset+V+PastPart:reset #;
+resew Vinf; !
+resew+V+PastPart:resewn #;
+retake Vinf2;
+retake+V+Past:retook #;
+retake+V+PastPart:retaken #;
+reteach Vinf2;
+reteach+V+Past:retaught #;
+reteach+V+PastPart:retaught #;
+retear Vinf2;
+retear+V+Past:retore #;
+retear+V+PastPart:retorn #;
+retell Vinf2;
+retell+V+Past:retold #;
+retell+V+PastPart:retold #;
+rethink Vinf2;
+rethink+V+Past:rethought #;
+rethink+V+PastPart:rethought #;
+retread Vinf2;
+retread+V+Past:retread #;
+retread+V+PastPart:retread #;
+retrofit Vinf; !
+retrofit+V+Past:retrofit #; ! [?]
+retrofit+V+PastPart:retrofit #; ! [?]
+rewake Vinf; !
+rewake+V+Past:rewoke #;
+rewake+V+PastPart:rewaken #;
+rewear Vinf2;
+rewear+V+Past:rewore #;
+rewear+V+PastPart:reworn #;
+reweave Vinf; !
+reweave+V+Past:rewove #;
+reweave+V+PastPart:rewoven #;
+rewed Vinf; !
+rewed+V+Past:rewed #;
+rewed+V+PastPart:rewed #;
+rewet Vinf; ! [?] 
+rewet+V+Past:rewet #;
+rewet+V+PastPart:rewet #;
+rewin Vinf2;
+rewin+V+Past:rewon #;
+rewin+V+PastPart:rewon #;
+rewind Vinf2;
+rewind+V+Past:rewound #;
+rewind+V+PastPart:rewound #;
+rewrite Vinf2;
+rewrite+V+Past:rewrote #;
+rewrite+V+PastPart:rewritten #;
+rid Vinf2;
+rid+V+Past:rid #;
+rid+V+PastPart:rid #;
+ride Vinf2;
+ride+V+Past:rode #;
+ride+V+PastPart:ridden #;
+ring Vinf2;
+ring+V+Past:rang #;
+ring+V+PastPart:rung #;
+rise Vinf2;
+rise+V+Past:rose #;
+rise+V+PastPart:risen #;
+roughcast Vinf2;
+roughcast+V+Past:roughcast #;
+roughcast+V+PastPart:roughcast #;
+run Vinf2;
+run+V+Past:ran #;
+run+V+PastPart:run #;
+sand-cast Vinf2;
+sand-cast+V+Past:sand-cast #;
+sand-cast+V+PastPart:sand-cast #;
+saw Vinf; !
+saw+V+PastPart:sawn #;
+say Vinf2;
+say+V+Past:said #;
+say+V+PastPart:said #;
+see Vinf2;
+see+V+Past:saw #;
+see+V+PastPart:seen #;
+seek Vinf2;
+seek+V+Past:sought #;
+seek+V+PastPart:sought #;
+sell Vinf2;
+sell+V+Past:sold #;
+sell+V+PastPart:sold #;
+send Vinf2;
+send+V+Past:sent #;
+send+V+PastPart:sent #;
+set Vinf2;
+set+V+Past:set #;
+set+V+PastPart:set #;
+sew Vinf; !
+sew+V+Past:sewed #;
+sew+V+PastPart:sewn #;
+shake Vinf2;
+shake+V+Past:shook #;
+shake+V+PastPart:shaken #;
+shave Vinf; !
+shave+V+PastPart:shaven #;
+shear Vinf; !
+shear+V+PastPart:shorn #;
+shed Vinf2;
+shed+V+Past:shed #;
+shed+V+PastPart:shed #;
+shine Vinf; !
+shine+V+Past:shone #; ! [?]
+shine+V+PastPart:shone #; ! [?]
+shit Vinf; !
+shit+V+Past:shit #;
+shit+V+Past:shat #;
+shit+V+PastPart:shit #;
+shit+V+PastPart:shat #;
+shoot Vinf2;
+shoot+V+Past:shot #;
+shoot+V+PastPart:shot #;
+show Vinf2;
+show+V+PastPart:shown #;
+shrink Vinf2;
+shrink+V+Past:shrank #;
+shrink+V+Past:shrunk #;
+shrink+V+PastPart:shrunk #;
+shut Vinf2;
+shut+V+Past:shut #;
+shut+V+PastPart:shut #;
+sight-read Vinf2;
+sight-read+V+Past:sight-read #;
+sight-read+V+PastPart:sight-read #;
+sing Vinf2;
+sing+V+Past:sang #;
+sing+V+PastPart:sung #;
+sink Vinf2;
+sink+V+Past:sank #;
+sink+V+Past:sunk #;
+sink+V+PastPart:sunk #;
+sit Vinf2;
+sit+V+Past:sat #;
+sit+V+PastPart:sat #;
+slay Vinf; ! (kill)
+slay+V+Past:slew #;
+slay+V+PastPart:slain #;
+! make sure that this is covered by the rules TODO (amuse) REGULAR	slayed	slayed
+sleep Vinf2;
+sleep+V+Past:slept #;
+sleep+V+PastPart:slept #;
+slide Vinf2;
+slide+V+Past:slid #;
+slide+V+PastPart:slid #;
+sling Vinf2;
+sling+V+Past:slung #;
+sling+V+PastPart:slung #;
+slink Vinf; !
+slink+V+Past:slunk #;
+slink+V+PastPart:slunk #;
+slit Vinf2;
+slit+V+Past:slit #;
+slit+V+PastPart:slit #;
+smell Vinf; !
+smell+V+Past:smelt #; ! [?]
+smell+V+PastPart:smelt #; ! [?]
+sneak Vinf; !
+sneak+V+Past:snuck #;
+sneak+V+PastPart:snuck #;
+sow Vinf; !
+sow+V+PastPart:sown #;
+speak Vinf2;
+speak+V+Past:spoke #;
+speak+V+PastPart:spoken #;
+speed Vinf; !
+speed+V+Past:sped #;
+speed+V+PastPart:sped #;
+spell Vinf; !
+spell+V+Past:spelt #; ! [?]
+spell+V+PastPart:spelt #; ! [?]
+spend Vinf2;
+spend+V+Past:spent #;
+spend+V+PastPart:spent #;
+spill Vinf; !
+spill+V+Past:spilt #; ! [?]
+spill+V+PastPart:spilt #; ! [?]
+spin Vinf2;
+spin+V+Past:spun #;
+spin+V+PastPart:spun #;
+spit Vinf2;
+spit+V+Past:spit #;
+spit+V+Past:spat #;
+spit+V+PastPart:spit #;
+spit+V+PastPart:spat #;
+split Vinf2;
+split+V+Past:split #;
+split+V+PastPart:split #;
+spoil Vinf; !
+spoil+V+Past:spoilt #; ! [?]
+spoil+V+PastPart:spoilt #; ! [?]
+spoon-feed Vinf2;
+spoon-feed+V+Past:spoon-fed #;
+spoon-feed+V+PastPart:spoon-fed #;
+spread Vinf2;
+spread+V+Past:spread #;
+spread+V+PastPart:spread #;
+spring Vinf2;
+spring+V+Past:sprang #;
+spring+V+Past:sprung #;
+spring+V+PastPart:sprung #;
+stand Vinf2;
+stand+V+Past:stood #;
+stand+V+PastPart:stood #;
+steal Vinf2;
+steal+V+Past:stole #;
+steal+V+PastPart:stolen #;
+stick Vinf2;
+stick+V+Past:stuck #;
+stick+V+PastPart:stuck #;
+sting Vinf2;
+sting+V+Past:stung #;
+sting+V+PastPart:stung #;
+stink Vinf2;
+stink+V+Past:stunk #;
+stink+V+Past:stank #;
+stink+V+PastPart:stunk #;
+strew Vinf; !
+strew+V+PastPart:strewn #;
+stride Vinf2;
+stride+V+Past:strode #;
+stride+V+PastPart:stridden #;
+strike Vinf2; ! (delete)  (hit)
+strike+V+Past:struck #;
+strike+V+PastPart:stricken #;
+strike+V+PastPart:struck #; !  (hit)
+string Vinf2;
+string+V+Past:strung #;
+string+V+PastPart:strung #;
+strive Vinf; !
+strive+V+Past:strove #;
+strive+V+PastPart:striven #;
+sublet Vinf2;
+sublet+V+Past:sublet #;
+sublet+V+PastPart:sublet #;
+sunburn Vinf; !
+sunburn+V+Past:sunburnt #; ! [?]
+sunburn+V+PastPart:sunburnt #; ! [?]
+swear Vinf2;
+swear+V+Past:swore #;
+swear+V+PastPart:sworn #;
+sweat Vinf; !
+sweat+V+Past:sweat #;
+sweat+V+PastPart:sweat #;
+sweep Vinf2;
+sweep+V+Past:swept #;
+sweep+V+PastPart:swept #;
+swell Vinf; !
+swell+V+PastPart:swollen #;
+swim Vinf2;
+swim+V+Past:swam #;
+swim+V+PastPart:swum #;
+swing Vinf2;
+swing+V+Past:swung #;
+swing+V+PastPart:swung #;
+take Vinf2;
+take+V+Past:took #;
+take+V+PastPart:taken #;
+teach Vinf2;
+teach+V+Past:taught #;
+teach+V+PastPart:taught #;
+tear Vinf2;
+tear+V+Past:tore #;
+tear+V+PastPart:torn #;
+telecast Vinf2;
+telecast+V+Past:telecast #;
+telecast+V+PastPart:telecast #;
+tell Vinf2;
+tell+V+Past:told #;
+tell+V+PastPart:told #;
+test-drive Vinf2;
+test-drive+V+Past:test-drove #;
+test-drive+V+PastPart:test-driven #;
+test-fly Vinf2;
+test-fly+V+Past:test-flew #;
+test-fly+V+PastPart:test-flown #;
+think Vinf2;
+think+V+Past:thought #;
+think+V+PastPart:thought #;
+throw Vinf2;
+throw+V+Past:threw #;
+throw+V+PastPart:thrown #;
+thrust Vinf2;
+thrust+V+Past:thrust #;
+thrust+V+PastPart:thrust #;
+tread Vinf2;
+tread+V+Past:trod #;
+tread+V+PastPart:trodden #;
+tread+V+PastPart:trod #;
+typecast Vinf2;
+typecast+V+Past:typecast #;
+typecast+V+PastPart:typecast #;
+typeset Vinf2;
+typeset+V+Past:typeset #;
+typeset+V+PastPart:typeset #;
+typewrite Vinf2;
+typewrite+V+Past:typewrote #;
+typewrite+V+PastPart:typewritten #;
+unbend Vinf2;
+unbend+V+Past:unbent #;
+unbend+V+PastPart:unbent #;
+unbind Vinf2;
+unbind+V+Past:unbound #;
+unbind+V+PastPart:unbound #;
+unclothe Vinf; !
+unclothe+V+Past:unclad #; ! [?]
+unclothe+V+PastPart:unclad #; ! [?]
+underbid Vinf2;
+underbid+V+Past:underbid #;
+underbid+V+PastPart:underbid #;
+undercut Vinf2;
+undercut+V+Past:undercut #;
+undercut+V+PastPart:undercut #;
+underfeed Vinf2;
+underfeed+V+Past:underfed #;
+underfeed+V+PastPart:underfed #;
+undergo Vinf2;
+undergo+V+Past:underwent #;
+undergo+V+PastPart:undergone #;
+underlie Vinf2;
+underlie+V+Past:underlay #;
+underlie+V+PastPart:underlain #;
+undersell Vinf2;
+undersell+V+Past:undersold #;
+undersell+V+PastPart:undersold #;
+underspend Vinf2;
+underspend+V+Past:underspent #;
+underspend+V+PastPart:underspent #;
+understand Vinf2;
+understand+V+Past:understood #;
+understand+V+PastPart:understood #;
+undertake Vinf2;
+undertake+V+Past:undertook #;
+undertake+V+PastPart:undertaken #;
+underwrite Vinf2;
+underwrite+V+Past:underwrote #;
+underwrite+V+PastPart:underwritten #;
+undo Vinf2;
+undo+V+Past:undid #;
+undo+V+PastPart:undone #;
+unfreeze Vinf2;
+unfreeze+V+Past:unfroze #;
+unfreeze+V+PastPart:unfrozen #;
+unhang Vinf2;
+unhang+V+Past:unhung #;
+unhang+V+PastPart:unhung #;
+unhide Vinf2;
+unhide+V+Past:unhid #;
+unhide+V+PastPart:unhidden #;
+unknit Vinf; !
+unknit+V+Past:unknit #;
+unknit+V+PastPart:unknit #;
+unlearn Vinf; !
+unlearn+V+Past:unlearnt #; ! [?]
+unlearn+V+PastPart:unlearnt #; ! [?]
+unsew Vinf; !
+unsew+V+PastPart:unsewn #;
+unsling Vinf2;
+unsling+V+Past:unslung #;
+unsling+V+PastPart:unslung #;
+unspin Vinf2;
+unspin+V+Past:unspun #;
+unspin+V+PastPart:unspun #;
+unstick Vinf2;
+unstick+V+Past:unstuck #;
+unstick+V+PastPart:unstuck #;
+unstring Vinf2;
+unstring+V+Past:unstrung #;
+unstring+V+PastPart:unstrung #;
+unweave Vinf; !
+unweave+V+Past:unwove #;
+unweave+V+PastPart:unwoven #;
+unwind Vinf2;
+unwind+V+Past:unwound #;
+unwind+V+PastPart:unwound #;
+uphold Vinf2;
+uphold+V+Past:upheld #;
+uphold+V+PastPart:upheld #;
+upset Vinf2;
+upset+V+Past:upset #;
+upset+V+PastPart:upset #;
+wake Vinf; !
+wake+V+Past:woke #;
+wake+V+PastPart:woken #;
+waylay Vinf2;
+waylay+V+Past:waylaid #;
+waylay+V+PastPart:waylaid #;
+wear Vinf2;
+wear+V+Past:wore #;
+wear+V+PastPart:worn #;
+weave Vinf; !
+weave+V+Past:wove #;
+weave+V+PastPart:woven #;
+wed Vinf; !
+wed+V+Past:wed #;
+wed+V+PastPart:wed #;
+weep Vinf2;
+weep+V+Past:wept #;
+weep+V+PastPart:wept #;
+wet Vinf; ! [?]
+wet+V+Past:wet #;
+wet+V+PastPart:wet #;
+whet Vinf; !   REGULAR	whetted	whetted
+win Vinf2;
+win+V+Past:won #;
+win+V+PastPart:won #;
+wind Vinf2;
+wind+V+Past:wound #;
+wind+V+PastPart:wound #;
+withdraw Vinf2;
+withdraw+V+Past:withdrew #;
+withdraw+V+PastPart:withdrawn #;
+withhold Vinf2;
+withhold+V+Past:withheld #;
+withhold+V+PastPart:withheld #;
+withstand Vinf2;
+withstand+V+Past:withstood #;
+withstand+V+PastPart:withstood #;
+wring Vinf2;
+wring+V+Past:wrung #;
+wring+V+PastPart:wrung #;
+write Vinf2;
+write+V+Past:wrote #;
+write+V+PastPart:written #;
+
+
+LEXICON Vinf
++V:0             #;
++V+3P+Sg:^s      #;
++V+PresPart:^ing #;
++V+Past:^ed      #;
++V+PastPart:^ed  #;
+
+
+LEXICON Vinf2
++V:0             #;
++V+3P+Sg:^s      #;
++V+PresPart:^ing #;
+
+
+LEXICON Vinf3
++V:0             #;
++V+PresPart:^ing #;
